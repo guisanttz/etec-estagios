@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --branco: #FFFFFF;
+  --preto: #000000;
+  --cinza: #ececec;
+  --vermelho: #B20000;
+  --ciano: #005C6D;
+  --cianoClaro: #009BA6;
+  --cianoEscuro: #00404b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--branco);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.interface {
+  max-width: 1700px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nome-site h1 a {
+  color: #FFFFFF;
+  font-size: 32px;
+  text-decoration: none;
+  margin-left: 35px;
+}
+
+header {
+  background: var(--vermelho);
+  padding: 30px;
+}
+
+.menu nav ul li a {
+  color: #FFFFFF;
+  font-size: 18px;
+  padding: 0 50px;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.menu nav ul li {
+  display: inline-block;
+}
+
+.menu nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu li a:hover {
+  color: #2e2e2e;
+  transform: scale(1.05);
+}
+
+.txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+  background: var(--ciano);
+  color: var(--branco);
+}
+
+.tudo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.conteudo {
+  padding: 30px;
+}
+
+h2 {
+    color: var(--ciano);
+    font-size: 35px;
+}
+
+h3 {
+  color: var(--cianoClaro);
+    font-size: 25px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+  background: var(--vermelho);
+  padding: 15px;
+  color: var(--branco);
+  font-weight: 400;
+  text-align: center;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+  header {
+      padding: 10px;
+  }
+  
+  .interface {
+      flex-direction: column;
+  }
+  
+  .nome-site h1 a {
+      margin-left: 0;
+      margin-bottom: 10px;
+  }
+  
+  .menu nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .menu nav ul li {
+      margin: 5px 0;
+  }
+  
+  .conteudo {
+      flex-direction: column;
+  }
+  
+  .esquerda,
+  .direita {
+      width: 100%;
+  }
+  
+  .esquerda h1,
+  .direita h1 {
+      font-size: 32px;
+  }
+  
+  .form {
+      padding: 10px;
+  }
+  
+  .form h1 {
+      font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+  header {
+      padding: 10px;
+  }
+
+  .nome-site h1 a {
+      font-size: 25px;
+  }
+
+  .menu nav ul {
+      margin-top: 10px;
+      flex-direction: row;
+
+  }
+
+  .menu nav ul li {
+      margin-bottom: 5px;
+  }
+
+  .menu nav ul li a {
+      font-size: 16px;
+      padding: 0 15px;
+  }
+
+  .esquerda h1,
+  .direita h1 {
+      font-size: 28px;
+  }
+
+  .form h1 {
+      font-size: 24px;
+  }
+
+  .login a input {
+      font-size: 20px;
+  }
+}

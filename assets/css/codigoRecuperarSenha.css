@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --cinza: #ececec;
+    --vermelho: #B20000;
+    --ciano: #005C6D;
+    --cianoClaro: #009BA6;
+    --cianoEscuro: #00404b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    background: var(--branco);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.interface {
+    max-width: 1700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nome-site h1 a {
+    color: var(--branco);
+    font-size: 32px;
+    text-decoration: none;
+    margin-left: 35px;
+}
+
+header {
+    background: var(--vermelho);
+    padding: 30px;
+}
+
+.menu nav ul li a {
+    color: var(--branco);
+    font-size: 18px;
+    padding: 0 50px;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.menu nav ul li {
+    display: inline-block;
+}
+
+.menu nav ul {
+    list-style-type: none;
+}
+
+.menu li a:hover {
+    color: #2e2e2e;
+    transform: scale(1.05);
+}
+
+.txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    background: var(--ciano);
+    color: var(--branco);
+}
+
+.formulario {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.codigo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    height: auto;
+    padding: 22px;
+    border-radius: 20px;
+    background: var(--branco);
+    color: var(--ciano);
+    text-align: center;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.codigo h1 {
+    font-size: 35px;
+}
+
+.avancar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.avancar button {
+    margin-top: 10px;
+    width: 250px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--branco);
+    font-size: 16px;
+    border: 1px var(--branco) solid;
+    background: var(--ciano);
+    transition: 0.3s ease-in-out;
+}
+
+.avancar button:hover {
+    background: var(--ciano);
+    color: var(--branco);
+    transition: 0.3s ease-in-out;
+}
+
+footer {
+    background: var(--vermelho);
+    padding: 15px;
+    color: var(--branco);
+    font-weight: 400;
+    text-align: center;
+    margin-top: auto;
+}

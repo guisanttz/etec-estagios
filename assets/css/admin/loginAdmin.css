@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --branco: #FFFFFF;
+  --preto: #000000;
+  --cinza: #ececec;
+  --vermelho: #B20000;
+  --ciano: #005C6D;
+  --cianoClaro: #009BA6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--branco);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.interface {
+  max-width: 1700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nome-site h1 a {
+  color: var(--branco);
+  font-size: 32px;
+  text-decoration: none;
+}
+
+header {
+  background: var(--vermelho);
+  padding: 30px;
+}
+
+section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 350px;
+  height: 370px;
+  gap: 15px;
+  color: var(--ciano);
+  border-radius: 20px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+form h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+form label {
+  width: 100%;
+}
+
+form label p {
+  margin-bottom: 3px;
+  color: var(--ciano);
+}
+
+form label .input {
+  background: var(--cinza);
+  color: var(--ciano);
+  padding: 4.5px 15px 5px 10px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 5px;
+}
+
+.esqueceu-senha {
+  margin-top: 7px;
+}
+
+.esqueceu-senha a {
+  color: var(--cianoClaro);
+}
+
+.esqueceu-senha a:hover {
+  color: var(--ciano);
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+}
+
+.login {
+  width: 100%;
+}
+
+.login input {
+  background: var(--ciano);
+  width: 100%;
+  height: 35px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3 ease-in-out;
+}
+
+.login input:hover {
+  background-color: #00404b;
+}
+
+footer {
+  background: var(--vermelho);
+  padding: 15px;
+  color: var(--branco);
+  font-weight: 400;
+  text-align: center;
+  margin-top: auto;
+}

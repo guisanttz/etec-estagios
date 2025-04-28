@@ -1,0 +1,13 @@
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --cinza: #ececec;
+    --vermelho: #B20000;
+    --vermelhoEscuro: #720000;
+    --azul: #0298cf;
+    --azulEscuro: #00698f;
+    --ciano: #005C6D;
+    --cianoClaro: #009BA6;
+    --cianoEscuro: #00404b;
+    --cianoMaisEscuro: #00272d;
+    --verde: #11be11;
+    --verdeEscuro: #008200;

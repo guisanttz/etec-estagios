@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --branco: #FFFFFF;
+  --preto: #000000;
+  --cinza: #ececec;
+  --vermelho: #B20000;
+  --vermelhoEscuro: #720000;
+  --azul: #0298cf;
+  --azulEscuro: #00698f;
+  --ciano: #005C6D;
+  --cianoClaro: #009BA6;
+  --cianoEscuro: #00404b;
+  --cianoMaisEscuro: #00272d;
+  --verde: #11be11;
+  --verdeEscuro: #008200;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* body {
+  display: flex;
+  flex-direction: row;
+} */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: var(--branco);
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+aside {
+  min-width: 280px;
+  padding: 15px 30px;
+  background: var(--cianoEscuro);
+  text-align: center;
+}
+
+aside .topo {
+  padding: 10px;
+}
+
+aside .topo .logo {
+  color: var(--branco);
+}
+
+aside .topo .logo p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.paineis {
+  padding: 20px;
+}
+
+.paineis p {
+  font-size: 20px;
+  color: var(--branco);
+}
+
+#pagina-selecionada {
+  background: var(--branco);
+  border-radius: 10px;
+  color: var(--cianoEscuro);
+}
+
+aside ul {
+  text-align: center;
+  width: 100%;
+}
+
+aside ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  list-style-type: none;
+  cursor: pointer;
+  height: 45px;
+  width: 100%;
+  margin: 20px auto;
+  border-radius: 10px;
+  line-height: 50px;
+}
+
+aside ul li:hover {
+  background: var(--cianoMaisEscuro);
+  color: var(--cianoEscuro);
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+aside ul li a {
+  color: var(--branco);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+aside ul li button {
+  color: var(--branco);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: 0.3s ease-in-out;
+  background: transparent;
+}
+
+aside ul li a:hover {
+  color: var(--branco);
+}
+
+aside ul li a i {
+  font-size: 25px;
+  min-width: 50px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+aside ul li button i {
+  font-size: 25px;
+  min-width: 20px;
+  margin-right: 25px;
+  text-align: center;
+}
+
+aside hr {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background: #ffffff33;
+}
+
+.topo-painel {
+  background: var(--cianoEscuro);
+  padding: 20px;
+  width: 100%;
+  height: 75px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px;
+}
+
+.nome-admin {
+  display: flex;
+  justify-content: right;
+  margin-right: 30px;
+  gap: 12px;
+  height: 100%;
+  align-items: center;
+}
+
+.nome-admin p {
+  color: var(--branco);
+  font-weight: 500;
+}
+
+.nome-admin i {
+  font-size: 35px;
+  color: var(--branco);
+  margin-right: 10px;
+}
+
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#conteudo-painel {
+  padding: 50px;
+  width: 100%;
+  height: 500px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.topo-tabela {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 15px 0;
+  width: 1500px;
+}
+
+.topo-tabela p {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--ciano);
+}
+
+.pesquisa {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 400px;
+  padding: 9px;
+  color: var(--preto);
+  font-size: 15px;
+  border: 1px solid var(--ciano);
+  border-radius: 6px 0 0 6px;
+  background: transparent;
+}
+
+.btn-pesquisa {
+  padding: 10px;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background: var(--ciano);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+.btn-pesquisa:hover {
+  background: var(--cianoEscuro);
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#editar {
+  background: var(--azul);
+  color: var(--branco);
+  transition: 0.3s ease-in-out;
+}
+
+#editar:hover {
+  background: var(--azulEscuro);
+  transition: 0.3s ease-in-out;
+}
+
+#deletar {
+  background: var(--vermelho);
+  color: var(--branco);
+  transition: 0.3s ease-in-out;
+}
+
+#deletar:hover {
+  background: var(--vermelhoEscuro);
+  transition: 0.3s ease-in-out;
+}
+
+#btn-modal-cadastro {
+  padding: 10px;
+  width: 200px;
+  color: var(--branco);
+  background: var(--ciano);
+  transition: 0.2s ease-in-out;
+}
+
+#btn-modal-cadastro:hover {
+  background: var(--cianoEscuro);
+  transition: 0.2s ease-in-out;
+}
+
+.tabela-container {
+  height: 700px;
+}
+
+.tabela {
+  width: 1500px;
+  border-collapse: collapse;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  table-layout: auto;
+}
+
+thead th {
+  color: var(--branco);
+  background: var(--ciano);
+  font-size: 15px;
+}
+
+tbody {
+  text-align: center;
+}
+
+tbody tr {
+  background: var(--cinza);
+}
+
+tbody tr:nth-child(even) {
+  background: var(--branco);
+}
+
+th,
+td {
+  padding: 10px 15px;
+}
+
+tr td a {
+  color: var(--preto);
+  text-decoration-color: var(--preto);
+}
+
+td:last-child {
+  padding: 22px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+#link {
+  text-decoration: none;
+}
+
+#btn-ver-mais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  color: var(--branco);
+  background: var(--verde);
+  transition: 0.2s ease-in-out;
+}
+
+#btn-ver-mais:hover {
+  background: var(--verdeEscuro);
+  transition: 0.2s ease-in-out;
+}

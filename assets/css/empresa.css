@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --cinza: #ececec;
+    --vermelho: #B20000;
+    --ciano: #005C6D;
+    --cianoClaro: #009BA6;
+    --cianoEscuro: #00404b;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background: var(--branco);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.interface {
+    max-width: 1700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nome-site h1 a {
+    color: var(--branco);
+    font-size: 32px;
+    text-decoration: none;
+    margin-left: 35px;
+}
+
+header {
+    background: var(--vermelho);
+    padding: 30px;
+}
+
+.menu nav ul li a {
+    display: flex;
+    color: var(--branco);
+    font-size: 18px;
+    padding: 0 50px;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.menu nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu nav ul li {
+    display: inline-block;
+}
+
+.menu li a button {
+    display: flex;
+    cursor: pointer;
+}
+
+.menu li a:hover {
+    color: #2e2e2e;
+    transform: scale(1.05);
+}
+
+.menu li button {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    height: 35px;
+    border: none;
+    background: transparent;
+    color: var(--branco);
+    width: 100px;
+}
+
+.menu li i {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    background: var(--ciano);
+    color: var(--branco);
+}
+
+.formis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+
+
+.dispo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 800px;
+    height: 960px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+form h2{
+    color: var(--ciano);
+}
+
+.empresa{
+    display: flex;
+    gap: 27px;
+    width: 727px;
+    padding: 0 0 15px;
+}
+
+.inao{
+    margin-left: 25px;
+}
+
+.value{
+    width: 80px;
+}
+
+.Reais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.envi{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    padding: 10px;
+    padding-top: 25px;
+    gap: 15px;
+}
+
+.vaga{
+    display: flex;
+    width: 727px;
+    gap: 27px;
+    padding: 0 0 15px;
+}
+
+#escolha{
+    display: flex;
+    height: 25px;
+    width: 30px;
+    padding: 4.5px 15px 5px 10px;
+    font-size: medium;
+    background: var(--cinza);
+    color: var(--ciano);
+    padding: 4.5px 15px 5px 10px;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.esco1{
+    margin-left: 25px;
+}
+
+.value{
+    display: flex;
+    margin-left: 2px;
+    width: 135px;
+    height: 30px;
+    padding: 4.5px 15px 5px 10px;
+    font-size: medium;
+    background: var(--cinza);
+    color: var(--ciano);
+    padding: 4.5px 15px 5px 10px;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+
+#inputs{
+    width: 350px;
+    height: 30px;
+    padding: 4.5px 15px 5px 10px;
+    font-size: medium;
+    background: var(--cinza);
+    color: var(--ciano);
+    padding: 4.5px 15px 5px 10px;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.local{
+    display: flex;
+    width: 727px;
+    gap: 25px;
+    padding: 0 0 15px;
+}
+
+.cidade,
+.endereco {
+    width: 50%;
+}
+
+#cida{
+    width: 100%;
+    height: 30px;
+    padding: 4.5px 15px 5px 10px;
+    font-size: medium;
+    background: var(--cinza);
+    color: var(--ciano);
+    padding: 4.5px 15px 5px 10px;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+#ende{
+    width: 100%;
+    height: 30px;
+    padding: 4.5px 15px 5px 10px;
+    font-size: medium;
+    background: var(--cinza);
+    color: var(--ciano);
+    padding: 4.5px 15px 5px 10px;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.periodo-hora {
+    display: flex;
+    width: 727px;
+    gap: 27px;
+    padding: 0 0 15px;
+}
+
+.periodo,
+ .hora {
+    width: 50%;
+}
+
+#periodo {
+    width: 100%;
+    height: 30px;
+    padding: 4.5px 15px 5px 10px;
+    font-size: medium;
+    background: var(--cinza);
+    color: var(--ciano);
+    padding: 4.5px 15px 5px 10px;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+#horario{
+    width: 100px;
+    height: 30px;
+    padding: 4.5px 15px 5px 10px;
+    font-size: medium;
+    background: var(--cinza);
+    color: var(--ciano);
+    padding: 4.5px 15px 5px 10px;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.horario1 {
+    margin-right: 35px;
+}
+
+.descricao{
+    display: flex;
+    justify-content: space-between;
+    width: 727px;
+    height: 350px;
+}
+
+.desemp{
+    display: flex;
+    flex-direction: column;
+    width: 363px;
+}
+
+.descargo{
+    display: flex;
+    flex-direction: column;
+}
+
+.desepm textarea,
+.descargo textarea {
+    background: var(--cinza);
+    color: var(--ciano);
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    width: 350px;
+    height: 310px;
+}
+
+.descri{
+    display: flex;
+    height: 300px;
+    width: 350px;
+}
+
+.foto{
+    display: flex;
+    width: 727px;
+    gap: 25px;
+}
+
+.logo,
+.art {
+    /* justify-content: center;
+    align-items: center; */
+    width: 50%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 727px;
+    padding: 10px 0px 0px 0px;
+}
+
+.buttons a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.buttons a input {
+    width: 300px;
+}
+
+.custum-file-upload {
+    height: 200px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #000000;
+    background-color: var(--cinza);
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+  
+  .custum-file-upload .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custum-file-upload .icon svg {
+    height: 80px;
+    fill: var(--ciano);
+  }
+  
+  .custum-file-upload .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custum-file-upload .text span {
+    font-weight: 400;
+    color: var(--ciano);
+  }
+  
+  .custum-file-upload input {
+    display: none;
+  }
+
+  .alinhar{
+    text-decoration: none;
+  }
+
+  .buttons input{
+    text-decoration: none;
+    margin-top: 10px;
+    width: 180px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    background-color: var(--ciano);
+    transition: 0.3s ease-in-out;
+  }
+
+  .voltar{
+    margin-right: 20px
+  }
+
+  footer {
+    background: var(--vermelho);
+    padding: 15px;
+    color: var(--branco);
+    font-weight: 400;
+    text-align: center;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .interface {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .txt {
+        padding: 20px;
+    }
+
+    .empresa, .vaga, .local, .descricao, .foto {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .empresa input, .vaga input, .local input, .cargo input, .descricao textarea, .foto input {
+        width: 100%;
+    }
+    
+    form {
+        padding: 10px;
+    }
+
+    .dispo {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .foto {
+        margin-top: 340px;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    .foto .logo label,
+    .foto .art label {
+        margin-top: 4px;
+        width: 100%;
+    }
+    
+    .voltar {
+        display: none;
+    }
+
+    .buttons a {
+        width: 100%;
+    }
+
+    #cida,
+    #ende {
+        width: 100%;
+    }
+
+    .horario1 {
+        margin-right: 20px;
+    }
+
+    #submit {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .nome-site h1 a {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    
+    .menu nav ul {
+        margin-top: 10px;
+    }
+    
+    .menu nav ul li {
+        margin-bottom: 5px;
+    }
+    
+    .menu nav ul li a {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .remunerado {
+        display: flex;
+    }
+    
+    .dispo {
+        width: 380px;
+        height: auto;
+    }
+    
+    footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+}
