@@ -28,7 +28,7 @@ Etec Estágios foi um sistema desenvolvido por alunos de uma escola técnica com
 
 1. Clone o repositório:
 
-git clone https://github.com/seu-usuario/etec-estagios.git
+    git clone https://github.com/seu-usuario/etec-estagios.git
 
 2. Importe o banco de dados (database.sql) no seu servidor MySQL.
 
@@ -38,4 +38,4 @@ git clone https://github.com/seu-usuario/etec-estagios.git
 
 5. Acesse no navegador:
 
-http://localhost/etec-estagios/
+    http://localhost/etec-estagios/
