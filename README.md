@@ -11,14 +11,12 @@ O **Etec Estágios** conecta estudantes e empresas através de uma plataforma si
 
 - **Alunos**:
   - Visualizam ofertas de estágio disponíveis.
-  - Se candidatam às vagas.
-
+  
 - **Empresas**:
   - Cadastram e gerenciam suas vagas de estágio.
 
 - **Administradores**:
-  - Gerenciam alunos, empresas, vagas e contratos.
-  - Acessam um painel administrativo completo.
+  - Acessam um painel administrativo completo com alunos, empresas, vagas e contratos.
 
 ## 🚀 Tecnologias utilizadas
 
@@ -30,13 +28,15 @@ O **Etec Estágios** conecta estudantes e empresas através de uma plataforma si
 ## 🛠️ Como rodar o projeto
 
 1. Clone o repositório:
-```bash
+
 git clone https://github.com/seu-usuario/etec-estagios.git
 
-Importe o banco de dados (database.sql) no seu servidor MySQL.
+2. Importe o banco de dados (database.sql) no seu servidor MySQL.
 
-Configure o arquivo de conexão com o banco (conexao.php ou equivalente).
+3. Configure o arquivo de conexão com o banco (conexao.php ou equivalente).
 
-Suba o projeto em um servidor local (ex.: XAMPP, WAMP, Laragon).
+4. Suba o projeto em um servidor local (ex.: XAMPP, WAMP, Laragon).
 
-Acesse no navegador:
+5. Acesse no navegador:
+
+http://localhost/etec-estagios/
