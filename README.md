@@ -5,7 +5,7 @@ Etec Estágios foi um sistema desenvolvido por alunos de uma escola técnica com
 ![PHP](https://img.shields.io/badge/PHP-7.4+-8892BF?logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-5.7+-4479A1?logo=mysql&logoColor=white)
 
-Provavelmente será utilizado por mim como estudos para novas implementações de tecnologias e outras funcionalidades que podem agregar mais ao projeto, como Programação Orientada à Objetos.
+Provavelmente será utilizado por mim como estudos para novas implementações de tecnologias e outras funcionalidades que podem agregar mais ao projeto, como Programação Orientada à Objetos, por exemplo.
 
 ## ✨ Funcionalidades principais
 
