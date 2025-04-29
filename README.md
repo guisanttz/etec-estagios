@@ -31,7 +31,7 @@ Etec Estágios foi um sistema desenvolvido por alunos de uma escola técnica com
 
 2. Importe o banco de dados (sql/etecestagios.sql) no seu servidor MySQL.
 
-3. Configure o arquivo de conexão com o banco (conexao.php ou equivalente).
+3. Configure o arquivo de conexão com o banco (conexao.php).
 
 4. Suba o projeto em um servidor local (ex.: XAMPP, WAMP, Laragon).
 
