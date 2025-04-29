@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03/12/2024 às 04:07
+-- Tempo de geração: 29/04/2025 às 02:08
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -42,7 +42,8 @@ CREATE TABLE `administradores` (
 INSERT INTO `administradores` (`id`, `nome`, `email`, `usuario`, `senha`) VALUES
 (1, 'Cauã Mimura', 'caua@email.com', 'cauaadmin', '$2y$10$6ijkMVkwdrb6H7vlVF0wsODdD038UiOYO8G3tSY1P3ed/S/vyR2JG'),
 (2, 'Guilherme Santos', 'guiadmin@email.com', 'guiadmin', '$2y$10$qFeHYy42eiGIwFgxQJq5f.99D/x40Hsc5L5MOvYd3N6/63J6hhbx2'),
-(3, 'Samuel Dionizio', 'samueladmin@email.com', 'samueladmin', '$2y$10$9S0sy55k7hJ8uohU1NSKAurX2Imz58B9sKn0yjEZQVIP1F43vW1Au');
+(3, 'Samuel Dionizio', 'samueladmin@email.com', 'samueladmin', '$2y$10$9S0sy55k7hJ8uohU1NSKAurX2Imz58B9sKn0yjEZQVIP1F43vW1Au'),
+(4, 'Admin Teste', 'adminteste@email.com', 'adminteste', '$2y$10$b1Y5ktY9S3TAbizOvol26uE5CP0hsuvFdW93CvPdYIfQZ9BCpCHV.');
 
 -- --------------------------------------------------------
 
@@ -109,7 +110,8 @@ INSERT INTO `empresas` (`id`, `razao_social`, `nome_fantasia`, `email`, `senha`,
 (3, 'Universidade Estadual Paulista', 'Unesp', 'unesp@email.com', '$2y$10$DZcxSJ4c2oB0385aFVRiWeebc.ZsOWUQRB0G8HsTLEUdB2y0Q8Ory', '45.789.123/0001-99', '456.789.123.456', '(14) 98765-4321', '3909-3590', '@unespoficial', '@unespoficial', '@unesp', 'Universidade', 'Rua Siqueira Campos', '461', 'São Mateus', 'Presidente Prudente', 'SP', '17033-360', '1976-01-30', 'Carlos Alberto'),
 (4, 'Etec Arruda Mello', 'Etec Arruda Mello', 'etec@email.com', 'f99a8ca7c8f7aeff7f88694781c4d8efb54f2a66ee74a0d88b120fffd6088cf6', '87.987.654/0001-12', '789.654.321.789', '(11) 97654-3210', '3909-7890', '@etecarrudamello', '@etecarrudamello', '@etecarrudamello', 'Escola', 'Rua Ribeiro de Barros', '500', 'Centro', 'Presidente Prudente', 'SP', '04567-890', '1998-03-10', 'João Silva'),
 (8, 'Banco do Brasil SA', 'Banco do Brasil', 'bancodobrasil@email.com', 'ecfdf852a1ec7e5e08ae0c22dc344b67e1bfb41dbe66d428351d818d5f8ab37a', '00.000.000/0438-12', '515.156.421.142', '(18) 98321-3713', '(18) 4002-0432', '@bancodobrasil', '@bancodobrasil', '@bancodobrasil', 'Banco', 'Rua Tenente Nicolau Maffei', '304', 'Centro', 'Presidente Prudente', 'SP', '19893-279', '1970-07-10', 'Marcelo'),
-(9, 'NU FINANCEIRA S.A. - SOCIEDADE DE CREDITO, FINANCIAMENTO E INVESTIMENTO', 'Nubank', 'nubank@email.com', '$2y$10$nO/MYKtuSWjNtlu3WkpFPeELfJUN.LjksoGShy/4PbjjZ5lHM0oQ2', '30.680.829/0001-23', '662.465.263.632', '(18) 98231-9813', '1111-1111', '@nubank', '@nubank', '@nubank', 'Sociedades de crédito, financiamento e investimento - financeiras', 'Rua Capote Valente', '120', 'Pinheiros', 'Presidente Prudente', 'SP', '05409-000', '2013-06-04', 'Maurício');
+(9, 'NU FINANCEIRA S.A. - SOCIEDADE DE CREDITO, FINANCIAMENTO E INVESTIMENTO', 'Nubank', 'nubank@email.com', '$2y$10$nO/MYKtuSWjNtlu3WkpFPeELfJUN.LjksoGShy/4PbjjZ5lHM0oQ2', '30.680.829/0001-23', '662.465.263.632', '(18) 98231-9813', '1111-1111', '@nubank', '@nubank', '@nubank', 'Sociedades de crédito, financiamento e investimento - financeiras', 'Rua Capote Valente', '120', 'Pinheiros', 'Presidente Prudente', 'SP', '05409-000', '2013-06-04', 'Maurício'),
+(10, 'Empresa Teste', 'Empresa Teste', 'empresateste@email.com', '$2y$10$mvHsaKOwqwMinscnezMuCOUh62gLB3TSzDxKtNoQ/6if7Gp0cL9Sy', '99.999.999/9999-99', '999.999.999.999', '(99) 99999-9999', '9999-9999', '@teste', '@teste', 'teste', 'Teste', 'Rua Teste', '99', 'Teste', 'Teste', 'BA', '99999-999', '2025-04-10', 'Teste');
 
 -- --------------------------------------------------------
 
@@ -199,7 +201,8 @@ INSERT INTO `usuarios` (`id`, `rm`, `nome`, `telefone`, `email`, `senha`, `sexo`
 (8, '03850', 'Rafael Yuri', '(18) 99860-6838', 'rafael@email.com', '$2y$10$wmIeIvtXjkCmyUGEtJ6Hk.pBeza4w8p75Bj/FRbIV.ivxHragyh4W', 'Masculino', '3º Ano', 'Informática para Internet', '2022 - 2024', 0),
 (11, '03853', 'Guilherme Rafael', '(18) 98127-1383', 'guilhermerafaell10@gmail.com', '$2y$10$rY9y3QzcjnAMSbKQ0WLXO.CCwwwByiLy9I1WRDSQQfWSHUlGzeQPe', 'Masculino', '3º Ano', 'Informática para Internet', '2022 - 2024', 0),
 (13, '77777', 'Gabriel', '(18) 99637-6253', 'robertoaparecidoferrari@gmail.com', '$2y$10$2tzaqU3pWlT.m612IiaKq.xG5NRHprf7QujJhxf8vFmtSnisQ4WHq', 'Masculino', '1º Ano', 'Informática para Internet', '2024 - 2026', 15),
-(14, '64656', 'teste', '', 'emailteste@email.com', '$2y$10$Aa6UyLV/7/Ze.lIW9SWyG.4s5TQ.5zMCMmaFOHS7v2kQDTLjp02nu', '', '', 'Administração', '', 0);
+(14, '64656', 'teste', '', 'emailteste@email.com', '$2y$10$Aa6UyLV/7/Ze.lIW9SWyG.4s5TQ.5zMCMmaFOHS7v2kQDTLjp02nu', '', '', 'Administração', '', 0),
+(15, '11111', 'User Teste', '(99) 99999-9999', 'userteste@email.com', '$2y$10$UBf4xwZvmdiS/g7pK5a5XOtm85CjjzCVXjyrYuT8/1qF6WZpuKfdO', 'Masculino', '3º Ano', 'Informática para Internet', '2025 - 2028', 0);
 
 -- --------------------------------------------------------
 
@@ -297,7 +300,7 @@ ALTER TABLE `vagas`
 -- AUTO_INCREMENT de tabela `administradores`
 --
 ALTER TABLE `administradores`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `contratos`
@@ -309,7 +312,7 @@ ALTER TABLE `contratos`
 -- AUTO_INCREMENT de tabela `empresas`
 --
 ALTER TABLE `empresas`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de tabela `imagens`
@@ -327,7 +330,7 @@ ALTER TABLE `recuperacao_senha`
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de tabela `vagas`
