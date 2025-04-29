@@ -56,3 +56,6 @@ Etec Estágios foi um sistema desenvolvido por alunos de uma escola técnica com
     Usuário = adminteste
     Senha = adminteste
     Obs: Acesse http://localhost/etec-estagios/loginAdmin.php para acessar à tela de login dos administradores
+
+##Manual do Usuario (Caso precise se localizar dentro do sistema)
+[ETEC Estágios - Manual do Usuário.pdf](https://github.com/user-attachments/files/19964621/ETEC.Estagios.-.Manual.do.Usuario.pdf)
