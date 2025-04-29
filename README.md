@@ -29,7 +29,7 @@ Etec Estágios foi um sistema desenvolvido por alunos de uma escola técnica com
 
     git clone https://github.com/seu-usuario/etec-estagios.git
 
-2. Importe o banco de dados (database.sql) no seu servidor MySQL.
+2. Importe o banco de dados (sql/etecestagios.sql) no seu servidor MySQL.
 
 3. Configure o arquivo de conexão com o banco (conexao.php ou equivalente).
 
