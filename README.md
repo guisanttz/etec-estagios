@@ -43,12 +43,17 @@ Etec Estágios foi um sistema desenvolvido por alunos de uma escola técnica com
 ## Para realizar logins no projeto
 
 -Alunos:
+
     RM = 99999
     Senha = userteste
+    
 -Empresas:
+
     E-mail = empresateste@email.com
     Senha = empresateste
+    
 -Administradores:
+
     Usuário = adminteste
     Senha = adminteste
     Obs: Acesse http://localhost/etec-estagios/loginAdmin.php para acessar à tela de login dos administradores
