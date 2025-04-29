@@ -41,6 +41,8 @@ Etec Estágios foi um sistema desenvolvido por alunos de uma escola técnica com
 
 ## Para realizar logins no projeto
 
+Obs: Você pode se cadastrar também, mas se preferir poupar tempo, utilize os acessos abaixo.
+
 - **Alunos**:
 
     - RM = 99999
